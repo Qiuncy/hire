@@ -53,7 +53,7 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     public function employee(){
-        return $this->hasOne(Job::class);
+        return $this->hasOne(Employee::class);
     }
     
     public function skills(){
@@ -64,4 +64,5 @@ class User extends Authenticatable implements MustVerifyEmail
 
         return $this->hasMany(EmployeeDocument::class);
      }
+  
 }

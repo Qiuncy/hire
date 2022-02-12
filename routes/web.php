@@ -37,7 +37,7 @@ Route::group(['middleware'=>['auth','verified']], function(){
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 //user 
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+
 Route::get('/chats', [ChatController::class, 'index'])->name('chats');
 
 
@@ -49,6 +49,9 @@ Route::get('accepted-bids', function(){ return view('tradesman.accepted_bids');}
 Route::get('all-quotes', function(){ return view('tradesman.all_quotes');});
 Route::get('quote', function(){ return view('tradesman.quote');});
 Route::get('accepted-jobs', function(){ return view('tradesman.accepted_jobs');});
+Route::get('profile/{id}', [ProfileController::class, 'show'])->name('tradesman/profile');
+Route::get('edit-profile/{id}', [ProfileController::class, 'edit'])->name('tradesman/edit-profile');
+Route::put('edit-profile/{id}', [ProfileController::class, 'update'])->name('tradesman/edit-profile');
 
 
 });
@@ -61,6 +64,7 @@ Route::get('all-bids', function(){ return view('employer.all_bids');});
 Route::get('bid', function(){ return view('employer.bid');});
 Route::get('quotes', function(){ return view('employer.accepted_jobs');});
 Route::get('quote', function(){ return view('employer.quote');});
+Route::get('profile', [ProfileController::class, 'index'])->name('employer.profile');
 });
 
 // Agent 
