@@ -38,15 +38,21 @@
         </ul>
       </li>
       <li class="treeview">
+<<<<<<< HEAD
         <a href="#">
           <i class="fa fa-files-o"></i>
           <span>Layout Options</span>
+=======
+        <a href="/employers">
+          <i class="fa fa-files-o"></i>
+          <span>Employers</span>
+>>>>>>> 9a85a29990389f6652113b49d5cfb5af426b75c0
           <span class="pull-right-container">
             <span class="label label-primary pull-right">4</span>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+          <li><a href="/employers"><i class="fa fa-circle-o"></i> All Employers</a></li>
           <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
           <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
           <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>

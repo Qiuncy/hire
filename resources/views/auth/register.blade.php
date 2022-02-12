@@ -44,6 +44,29 @@
 				<form method="POST" action="{{ route('register') }}" class="mb-5">
                     @csrf
 
+					<div class="account-type">
+						<div>
+							<input type="radio" name="default_role" id="freelancer-radio" class="account-type-radio"  value="employee">
+							<label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Tradesman</label>
+						</div>
+
+						<div>
+							<input type="radio" name="default_role" id="agent-radio" class="account-type-radio" value="agent">
+							<label for="agent-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Agent</label>
+						</div>
+	
+						<div>
+							<input type="radio" name="default_role" id="employer-radio" class="account-type-radio" value="employee">
+							<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
+						</div>
+					
+					</div>
+					@error('default_role')
+					<span class="invalid-feedback" role="alert">
+						<strong>{{ $message }}</strong>
+					</span>
+				@enderror
+
 					<div class="input-with-icon-left">
 						<i class="icon-material-outline-account-circle"></i>
 

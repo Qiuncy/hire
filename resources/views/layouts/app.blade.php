@@ -9,7 +9,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
+    @livewireStyles
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -30,6 +30,9 @@
         </main>
         {{-- @include('layouts.footer') --}}
 </div>
+
+
+@livewireScripts
 @include('layouts.scripts')
 </body>
 </html>
