@@ -48,9 +48,21 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
-    {
+    {     
+
+       
+        // $role = $data['default_role'];
+   
+        //  if($role ="" | !$role="employee"| !$role="employer"| !$role="agent"){
+        //      echo "0";
+        //      dd('false');
+        //  };
+   
+    
+       
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            // "default_role'"=> "required|in:['employer','employee','agent']",
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -64,9 +76,11 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+     
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'default_role' => $data['default_role'],
             'password' => Hash::make($data['password']),
         ]);
     }
