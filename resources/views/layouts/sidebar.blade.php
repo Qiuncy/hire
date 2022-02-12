@@ -27,8 +27,8 @@
 						<ul data-submenu-title="Organize and Manage">
 							<li><a href="#"><i class="icon-material-outline-business-center"></i> Jobs</a>
 								<ul>
-								
-									<li><a href="dashboard-post-a-job.html">Post a Job</a></li>
+									<li><a href="/employer/create-job">Post a Job</a></li>
+									<li><a href="/employer/my-jobs">My Jobs</a></li>
 								</ul>	
 							</li>
 							<li><a href="#"><i class="icon-material-outline-assignment"></i> Bids</a>

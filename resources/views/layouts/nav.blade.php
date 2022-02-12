@@ -26,16 +26,16 @@
 					
 					@endauth
 
-					<li><a href="{{ route('jobs')}}" class="current">Find Jobs</a>
+					<li><a href="/jobs" class="current">Find Jobs</a>
 						
 					</li>
 					<li><a href="{{ route('tradesman')}}" class="current"> Find Tradesman</a>
+@hasrole('employer')
+					</li>
+					<li><a href="/employer/create-job" class="current"> Post Job</a>
 						
 					</li>
-					<li><a href="{{ route('create_jobs')}}" class="current"> Post Job</a>
-						
-					</li>
-
+@endhasrole
                          <!-- Authentication Links -->
                          @guest
                          @if (Route::has('login'))

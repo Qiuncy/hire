@@ -4,6 +4,7 @@
 
 <div id="wrapper" class="mm-page mm-slideout" style="padding-top: 82px;">
 
+<<<<<<< HEAD
     <!-- Header Container
     ================================================== -->
     <header id="header-container" class="fullwidth" style="position: fixed;">
@@ -643,6 +644,12 @@
             </div>
         </div>
     </div>
+=======
+        
+    <div class="clearfix"></div>
+  
+   @livewire('jobs.front-end-jobs')
+>>>>>>> 9a85a29990389f6652113b49d5cfb5af426b75c0
     
     
     <!-- Footer

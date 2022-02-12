@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class ProfileController extends Controller
 {
     /**
@@ -21,6 +22,7 @@ class ProfileController extends Controller
         $user['last_name']  = $name[1];
         
         return view('profile', compact('user'));
+        //
     }
 
     /**
