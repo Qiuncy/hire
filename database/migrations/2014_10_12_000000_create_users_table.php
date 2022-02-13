@@ -19,9 +19,6 @@ class CreateUsersTable extends Migration
             $table->string('contact_number')->nullable();
             $table->string('email')->unique();
             $table->text('address')->nullable();
-            $table->string('account_number')->nullable();
-            $table->string('account_name')->nullable();
-            $table->string('branch_code')->nullable();
             $table->enum('default_role',["admin","agent","employer","employee"]);
             $table->string('slug');
             $table->timestamp('email_verified_at')->nullable();

@@ -107,7 +107,7 @@
 						
 						<ul class="user-menu-small-nav">
 							<li><a href="{{ route('home')}}"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="{{ route('profile')}}"><i class="icon-material-outline-settings"></i> Profile</a></li>
+							{{-- <li><a href="{{ route('profile')}}"><i class="icon-material-outline-settings"></i> Profile</a></li> --}}
 							
 							<li>
 								
